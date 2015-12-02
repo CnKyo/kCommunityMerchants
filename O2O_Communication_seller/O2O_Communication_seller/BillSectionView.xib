@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="OcJ-K4-7XE" customClass="BillSectionView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aju-av-Qoy" userLabel="line">
+                    <rect key="frame" x="0.0" y="54" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="4ST-J6-tip"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vnd-yp-KhT">
+                    <rect key="frame" x="0.0" y="0.0" width="106.5" height="54"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="全部">
+                        <color key="titleColor" red="0.97647058819999999" green="0.023529411760000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGH-6y-Lel">
+                    <rect key="frame" x="106" y="0.0" width="106.5" height="54"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="收入">
+                        <color key="titleColor" red="0.2784313725" green="0.28235294119999998" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PsH-57-xBS">
+                    <rect key="frame" x="213" y="0.0" width="106.5" height="54"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="提现">
+                        <color key="titleColor" red="0.2784313725" green="0.28235294119999998" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="nGH-6y-Lel" firstAttribute="leading" secondItem="Vnd-yp-KhT" secondAttribute="trailing" id="1Qx-bR-DTx"/>
+                <constraint firstAttribute="bottom" secondItem="aju-av-Qoy" secondAttribute="bottom" id="1gu-6Y-uda"/>
+                <constraint firstItem="PsH-57-xBS" firstAttribute="top" secondItem="OcJ-K4-7XE" secondAttribute="top" id="45I-DN-Niy"/>
+                <constraint firstItem="aju-av-Qoy" firstAttribute="leading" secondItem="OcJ-K4-7XE" secondAttribute="leading" id="DrA-CZ-9NB"/>
+                <constraint firstAttribute="trailing" secondItem="aju-av-Qoy" secondAttribute="trailing" id="EeO-03-yxf"/>
+                <constraint firstItem="aju-av-Qoy" firstAttribute="top" secondItem="Vnd-yp-KhT" secondAttribute="bottom" id="GkB-iM-RhY"/>
+                <constraint firstItem="PsH-57-xBS" firstAttribute="leading" secondItem="nGH-6y-Lel" secondAttribute="trailing" id="HCN-2F-Vcf"/>
+                <constraint firstItem="Vnd-yp-KhT" firstAttribute="width" secondItem="PsH-57-xBS" secondAttribute="width" id="PKZ-oa-mCA"/>
+                <constraint firstAttribute="trailing" secondItem="PsH-57-xBS" secondAttribute="trailing" id="Q0V-CS-K4N"/>
+                <constraint firstItem="Vnd-yp-KhT" firstAttribute="leading" secondItem="OcJ-K4-7XE" secondAttribute="leading" id="TL8-yB-Epj"/>
+                <constraint firstItem="nGH-6y-Lel" firstAttribute="top" secondItem="OcJ-K4-7XE" secondAttribute="top" id="Wex-DG-6Ce"/>
+                <constraint firstItem="aju-av-Qoy" firstAttribute="top" secondItem="PsH-57-xBS" secondAttribute="bottom" id="b6h-yI-Zvl"/>
+                <constraint firstItem="aju-av-Qoy" firstAttribute="top" secondItem="nGH-6y-Lel" secondAttribute="bottom" id="bh5-fy-1yF"/>
+                <constraint firstItem="Vnd-yp-KhT" firstAttribute="width" secondItem="nGH-6y-Lel" secondAttribute="width" id="eZe-Xh-daj"/>
+                <constraint firstItem="Vnd-yp-KhT" firstAttribute="top" secondItem="OcJ-K4-7XE" secondAttribute="top" id="jbo-Rq-ydx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="293.5"/>
+        </view>
+    </objects>
+</document>
